@@ -30,7 +30,7 @@
 		<h2>2.	Configuration of Data (very important step!) </h2>
 		<p class="problem">The dataset we chose included the total housing starts for Provinces and Metropolitan areas. It did not include any spatial data so we knew we would have to add that to our dataset in order to map it. We chose to work with 5 metropolitan cities and get the coordinates of those cities to add to the dataset. </p>
 		<p class="problem">The purpose to this web app is to visualize housing data change over time, this requires the data to have time, a date is not enough. We added time to our dataset by adding a column that included the date (in our case we chose Jan 1st as our data was for the whole year, which date we chose didn’t matter as long as it was consistent) as well as time (our csv defaulted to the time it was created 15:34, again not important in our case as long as the time was consistent for each entry). Finally, the year was also included in that newly created time column.</p>
-		<img class= "problemimage" src="images/" alt="csv">
+		<img class= "problemimage" src="images/data.jpg" alt="Data Table">
 		
 		<h3>*Important Note*</h3>
 		<p>Having time data in your dataset before uploading it to ArcGIS Online will save you time, you can always add time data to data layers you have saved on ArcGIS Online however it will always result in the defaults and it can be time consuming going and changing each record.</p>
@@ -38,13 +38,13 @@
 		<h2>3.	Adding Data to ArcGIS Online</h2>
 		
 		<p class="problem">We created a layer to host the data from our csv file. This allowed us all to use the one data layer while exploring different ways to configure the web app. Once you created the layer, scroll down on the overview page to where you see “Layers” in this section you’ll see “Time Settings” within there make sure you have “Enable Time” checked off. This will allow you to use the time data in your web map and web app.  </p>
-		<img class= "problemimage" src="images/" alt="Layers">
+		<img class= "problemimage" src="images/timesettings.jpg" alt="Layers">
 		
 		<h2>4.	Creating a Web Map  </h2>
 		<p class="problem">After the layer is created add it to a map, this is where you will symbolize the data and any other layers, edit your legend and decide on a base map. Make sure when you add your layer that time enable is still check (click on more options of the data layer) this will show a time slider at the bottom of the map. </p>
-		<img class= "problemimage" src="images/" alt="Web Map Configuration">
+		<img class= "problemimage" src="images/maptimesettings.jpg" alt="Web Map Configuration">
 		<p class="problem">Here you can play around with the time settings  and change the speed of the time slider. Set the map to the extent/position you want, this will be the default/home extent once your web app is created. </p>
-		<img class= "problemimage" src="images/Annotation%202020-04-07%20093401.jpg" alt="Time Settings">
+		<img class= "problemimage" src="images/Annotation 2020-04-07 093401.jpg" alt="Time Settings">
 		<img class= "problemimage" src="images/Annotation 2020-04-07 093457.jpg" alt="Time Settings/Time Span">
 		<h3>*Important Note*</h3>
 		<p>Changing any data, symbolization, extent/position of map in your web map will be transferred over to your web app after the changes have been saved.  </p>
@@ -54,23 +54,23 @@
 		<h2>5.	Creating a Web App  </h2>
 		
 		<p class="problem">Once the web map is to your satisfaction save the map and click share, then choose <em>“Create a Web App”</em>. </p>
-		<img class= "problemimage" src="images/" alt="Create a Web App">
+		<img class= "problemimage" src="images/createwebapp.jpg" alt="Create a Web App">
 		<p class="problem">There are two options to create a web app to display time data. The first is a configurable app called <em>“Time Aware.”</em> This will automatically create a web app with that is time aware and requires you to do little configuration to it. </p>
 		
-		<img class= "problemimage" src="images/" alt="Create a New Web App">
+		<img class= "problemimage" src="images/timeawareapp.jpg" alt="Create a New Web App">
 		<p class="problem">There is also the option of “Web AppBuilder”, which is what we chose. We went with this option as there are more options to customize the web app and add other features to the app.  </p>
 		<img class= "problemimage" src="images/" alt="Create a New Web App">
 		<p class="problem">First you are going to want to choose a theme for your web app, we went with a theme that was minimal as the data on the map was the focal point of our web app, we had no plans of having supplemental information on the web app.  </p>
-		<img class= "problemimage" src="images/" alt="Choosing Theme">
+		<img class= "problemimage" src="images/theme.jpg" alt="Choosing Theme">
 		<p class="problem">Widgets can be added to your web app, think of widgets like cool add on you can add to your web app that allows the user to interact with the app.</p?
 		<img class= "problemimage" src="images/" alt="Choosing Widget" >
 		<p class="problem">This is where we added the time slider widget. Configuring the time slider widget is very similar to that of the web map we did earlier. In fact, the default settings of this widget will be that of what you had in the web map, so if you like the settings you chose before you are able keep them, if not you can still change them. (Changing the time slider settings in the web app will not change the settings the web map).</p>
-		<img class= "problemimage" src="images/" alt="Configuring the Time Slider Widget" >
+		<img class= "problemimage" src="images/timesliderwidget.jpg" alt="Configuring the Time Slider Widget" >
 		<p class="problem">We decided to add another widget, the query widget, so that users can see details of the housing data more clearly as well as query what they are looking for.</p>
-		<img class= "problemimage" src="images/" alt="Configuring the Query" >
-		<img class= "problemimage" src="images/" alt="Query" >
+		<img class= "problemimage" src="images/querywidget.jpg" alt="Configuring the Query" >
+		<img class= "problemimage" src="images/Annotation 2020-04-07 095526.jpg" alt="Query" >
 		<p class="problem">Once you have all the widgets you want and all the settings are up to your satisfaction you can preview you web app, and then launch the app!</p>
-		<img class= "problemimage" src="images/" alt="Final Web App" >
+		<img class= "problemimage" src="images/web app.jpg" alt="Final Web App" >
 		
 		
 		
