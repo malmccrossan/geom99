@@ -143,7 +143,7 @@ img {
 }
 .top {
 	font-size: 100px;
-	align-content: center;
+	align-self: center;
 	padding-bottom: 20px;
 	
 	}
