@@ -30,7 +30,7 @@
 		<h2>2.	Configuration of Data (very important step!) </h2>
 		<p class="problem">The dataset we chose included the total housing starts for Provinces and Metropolitan areas. It did not include any spatial data so we knew we would have to add that to our dataset in order to map it. We chose to work with 5 metropolitan cities and get the coordinates of those cities to add to the dataset. </p>
 		<p class="problem">The purpose to this web app is to visualize housing data change over time, this requires the data to have time, a date is not enough. We added time to our dataset by adding a column that included the date (in our case we chose Jan 1st as our data was for the whole year, which date we chose didn’t matter as long as it was consistent) as well as time (our csv defaulted to the time it was created 15:34, again not important in our case as long as the time was consistent for each entry). Finally, the year was also included in that newly created time column.</p>
-		<img class= "problemimage" src="images/Layers.jpg" alt="Data Table">
+		<img class= "problemimage" src="images/data.jpg" alt="Data Table">
 		
 		<h3>*Important Note*</h3>
 		<p>Having time data in your dataset before uploading it to ArcGIS Online will save you time, you can always add time data to data layers you have saved on ArcGIS Online however it will always result in the defaults and it can be time consuming going and changing each record.</p>
@@ -38,7 +38,8 @@
 		<h2>3.	Adding Data to ArcGIS Online</h2>
 		
 		<p class="problem">We created a layer to host the data from our csv file. This allowed us all to use the one data layer while exploring different ways to configure the web app. Once you created the layer, scroll down on the overview page to where you see “Layers” in this section you’ll see “Time Settings” within there make sure you have “Enable Time” checked off. This will allow you to use the time data in your web map and web app.  </p>
-		<img class= "problemimage" src="images/webappbuilder.jpg" alt="Layers">
+		<img class= "problemimage" src="images/Layers.jpg" alt="Layers">
+		<img class= "problemimage" src="images/timesettings.jpg" alt="Layers">
 		
 		<h2>4.	Creating a Web Map  </h2>
 		<p class="problem">After the layer is created add it to a map, this is where you will symbolize the data and any other layers, edit your legend and decide on a base map. Make sure when you add your layer that time enable is still check (click on more options of the data layer) this will show a time slider at the bottom of the map. </p>
