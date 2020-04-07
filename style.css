@@ -143,9 +143,9 @@ img {
 }
 .top {
 	font-size: 20px;
-	float:right;
-	padding-bottom: 2em;
-	padding-right:2em;
+	float: center;
+	padding-bottom: 20px;
+	
 	}
 
 /* Footer */
