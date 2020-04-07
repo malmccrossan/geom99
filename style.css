@@ -110,8 +110,6 @@ hr {
 
 /* Images */
 
-
-
 img { 
     max-width: 100%;
     height:auto;
@@ -134,16 +132,13 @@ img {
 	max-width: 50%;
 	max-height: 80%;
  }
-
-
-
 .content { /*Formatting  the main content of the page*/
     padding: 20px;
     margin: 0 100px;
 }
 .top {
 	font-size: 100px;
-	align-self: center;
+	align-item: center;
 	padding-bottom: 20px;
 	
 	}
