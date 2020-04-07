@@ -23,19 +23,54 @@
 		    <h1>THE WORKFLOW</h1>
 		    <hr>
 		<h2>1.	Finding Data </h2>
-	    <p>Data from the CMHC could not be used as it was not ready. We decided to find open sourced data similar to the data we would have received. Finding open sourced data on housing prices was unexpectedly challenging. After going through multiple different datasets and testing them against the functionality of using the time aware feature in ArcGIS Online (more on this below) we settled on altering a dataset to fit what we needed. </p>
-	    <p>We used CMHC open data portal and found a dataset on the amount of housing unit starts for the years 1990-2016; this is the number of units that had started to be built during those years.  </p>
-		<h2>  </h2>
+	    <p class="problem">Data from the CMHC could not be used as it was not ready. We decided to find open sourced data similar to the data we would have received. Finding open sourced data on housing prices was unexpectedly challenging. After going through multiple different datasets and testing them against the functionality of using the time aware feature in ArcGIS Online (more on this below) we settled on altering a dataset to fit what we needed. </p>
+	    <p class="problem">We used CMHC open data portal and found a dataset on the amount of housing unit starts for the years 1990-2016; this is the number of units that had started to be built during those years.  </p>
+		
 		
 		<h2>2.	Configuration of Data (very important step!) </h2>
-		<p>The dataset we chose included the total housing starts for Provinces and Metropolitan areas. It did not include any spatial data so we knew we would have to add that to our dataset in order to map it. We chose to work with 5 metropolitan cities and get the coordinates of those cities to add to the dataset. </p>
-		<p>The purpose to this web app is to visualize housing data change over time, this requires the data to have time, a date is not enough. We added time to our dataset by adding a column that included the date (in our case we chose Jan 1st as our data was for the whole year, which date we chose didn’t matter as long as it was consistent) as well as time (our csv defaulted to the time it was created 15:34, again not important in our case as long as the time was consistent for each entry). Finally, the year was also included in that newly created time column.</p>
+		<p class="problem">The dataset we chose included the total housing starts for Provinces and Metropolitan areas. It did not include any spatial data so we knew we would have to add that to our dataset in order to map it. We chose to work with 5 metropolitan cities and get the coordinates of those cities to add to the dataset. </p>
+		<p class="problem">The purpose to this web app is to visualize housing data change over time, this requires the data to have time, a date is not enough. We added time to our dataset by adding a column that included the date (in our case we chose Jan 1st as our data was for the whole year, which date we chose didn’t matter as long as it was consistent) as well as time (our csv defaulted to the time it was created 15:34, again not important in our case as long as the time was consistent for each entry). Finally, the year was also included in that newly created time column.</p>
 		<img class= "problemimage" src="images/" alt="csv">
 		
 		<h3>*Important Note*</h3>
 		<p>Having time data in your dataset before uploading it to ArcGIS Online will save you time, you can always add time data to data layers you have saved on ArcGIS Online however it will always result in the defaults and it can be time consuming going and changing each record.</p>
-
 		
+		<h2>3.	Adding Data to ArcGIS Online</h2>
+		
+		<p class="problem">We created a layer to host the data from our csv file. This allowed us all to use the one data layer while exploring different ways to configure the web app. Once you created the layer, scroll down on the overview page to where you see “Layers” in this section you’ll see “Time Settings” within there make sure you have “Enable Time” checked off. This will allow you to use the time data in your web map and web app.  </p>
+		<img class= "problemimage" src="images/" alt="Layers">
+		
+		<h2>4.	Creating a Web Map  </h2>
+		<p class="problem">After the layer is created add it to a map, this is where you will symbolize the data and any other layers, edit your legend and decide on a base map. Make sure when you add your layer that time enable is still check (click on more options of the data layer) this will show a time slider at the bottom of the map. </p>
+		<img class= "problemimage" src="images/" alt="Web Map Configuration">
+		<p class="problem">Here you can play around with the time settings  and change the speed of the time slider. Set the map to the extent/position you want, this will be the default/home extent once your web app is created. </p>
+		<img class= "problemimage" src="images/" alt="Time Settings">
+		<img class= "problemimage" src="images/" alt="Time Settings/Time Span">
+		<h3>*Important Note*</h3>
+		<p>Changing any data, symbolization, extent/position of map in your web map will be transferred over to your web app after the changes have been saved.  </p>
+		<h3>*Challenges*</h3>
+		<p>The time settings within the web map and the “Time Aware” app can be very finicky. We struggled with getting the time slider to work properly because when we chose the settings to display each year, with four years (the four years our data was) it kept displaying the wrong years. It would display 2012-2013, 2013-2014, 2014-2016. After doing research we found that many people had this issue working with time data within the web map. This is when we began to explore looking at Experience Builder. Experience builder proved to be usable for our desired results as well, however because Experience Builder is a lot more customizable it requires a lot more work to set up your web app than Web AppBuilder. For this reason, one of us focused on continuing to build the web app within Experience builder while another continued to mess around with the time settings in the web map. </p>
+		<p>Sometimes messing around with settings and trying new things can solve your issue, this is what we found because after trying every possible time setting and then reverting to the original settings the time slider finally displayed properly. As a group we decided to continue with the web app and abandon Experience Builder as we just didn’t have the time. </p>
+		<h2>5.	Creating a Web App  </h2>
+		
+		<p class="problem">Once the web map is to your satisfaction save the map and click share, then choose <em>“Create a Web App”</em>. </p>
+		<img class= "problemimage" src="images/" alt="Create a Web App">
+		<p class="problem">There are two options to create a web app to display time data. The first is a configurable app called <em>“Time Aware.”</em> This will automatically create a web app with that is time aware and requires you to do little configuration to it. </p>
+		
+		<img class= "problemimage" src="images/" alt="Create a New Web App">
+		<p class="problem">There is also the option of “Web AppBuilder”, which is what we chose. We went with this option as there are more options to customize the web app and add other features to the app.  </p>
+		<img class= "problemimage" src="images/" alt="Create a New Web App">
+		<p class="problem">First you are going to want to choose a theme for your web app, we went with a theme that was minimal as the data on the map was the focal point of our web app, we had no plans of having supplemental information on the web app.  </p>
+		<img class= "problemimage" src="images/" alt="Choosing Theme">
+		<p class="problem">Widgets can be added to your web app, think of widgets like cool add on you can add to your web app that allows the user to interact with the app.</p?
+		<img class= "problemimage" src="images/" alt="Choosing Widget" >
+		<p class="problem">This is where we added the time slider widget. Configuring the time slider widget is very similar to that of the web map we did earlier. In fact, the default settings of this widget will be that of what you had in the web map, so if you like the settings you chose before you are able keep them, if not you can still change them. (Changing the time slider settings in the web app will not change the settings the web map).</p>
+		<img class= "problemimage" src="images/" alt="Configuring the Time Slider Widget" >
+		<p class="problem">We decided to add another widget, the query widget, so that users can see details of the housing data more clearly as well as query what they are looking for.</p>
+		<img class= "problemimage" src="images/" alt="Configuring the Query" >
+		<img class= "problemimage" src="images/" alt="Query" >
+		<p class="problem">Once you have all the widgets you want and all the settings are up to your satisfaction you can preview you web app, and then launch the app!</p>
+		<img class= "problemimage" src="images/" alt="Final Web App" >
 		
 		
 		
