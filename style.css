@@ -77,13 +77,15 @@ hr {
     border-top: 2px solid;
     
 }
-/*Link bar on th Top*/
+/*Link bar on the Top*/
 .menbar {
     display: none;
 }
 
 .linkbar {
     margin:0 auto;
+    position: fixed;		/* Fixed top menu */
+    top: 0;
     width: 100%;
     text-align: center;
     display: flex;
