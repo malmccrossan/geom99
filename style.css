@@ -138,10 +138,11 @@ img {
 }
 .top {
 	font-size: 100px;
-	float: right;
 	padding-bottom: 20px;
-	
 	}
+#top{
+	text-align: center;
+}
 
 /* Footer */
 .footer{
