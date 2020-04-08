@@ -37,9 +37,16 @@ h2 {
 	}
 
 h3 { 
-    font-size: 25px;
+    font-size: 26px;
     text-align: left;
 }
+h4{
+   font-size: 24px;
+	text-align: center;
+	font-family: Parisienne;
+	
+}
+
 /*paragraph styling*/
 p.group { 
     font-family: courier, arial, helvetica;
@@ -48,6 +55,7 @@ p.group {
     margin: 0px;
 	padding: 15px;
 }
+
 
 p.problem {
 	font-family: courier, arial, helvetica;
