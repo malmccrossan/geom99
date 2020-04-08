@@ -13,7 +13,7 @@ body {
     font-family: courier, arial, helvetica;
     font-size: 20px;
     color: #282C2D;
-    background-color: #E9f0E9;
+    background-color: #E1EBE2;
     margin: 0;
 }
 /* While user hovers over link it will change colour */
@@ -97,7 +97,7 @@ hr {
 .linkbar a {
     font-family:  courier, arial, helvetica;
     font-size: 22px;
-    background-color: #0f5c15;
+    background-color: #0F5C15;
     padding: 12px 5px;
     text-align: center;
     color: #f0f4f5;
