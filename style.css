@@ -47,7 +47,9 @@ h4{
 }
 
 .workflowh2 {
-	background-color: #E9F0F0;
+	display: inline-flex;
+	background-color: #FCFDFC;
+	padding: 5px;
 }
 
 /*paragraph styling*/
