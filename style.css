@@ -35,22 +35,24 @@ h2 {
     padding: 50px 0px 20px 0px;
 	}
 
+h2 .workflowh2 {
+	display: inline;
+	background-color: #F1F6F1;
+	padding: 5px;
+}
+
 h3 { 
     font-size: 26px;
     text-align: left;
 }
-h4{
+
+h4 {
    font-size: 34px;
 	text-align: center;
 	font-family: Parisienne;
 	
 }
 
-.workflowh2 {
-	display: inline;
-	background-color: #F1F6F1;
-	padding: 5px;
-}
 
 /*paragraph styling*/
 p.group { 
