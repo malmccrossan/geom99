@@ -12,46 +12,49 @@
         
 	    <div class="linkbar" id="linkbar">
         	<a href="bgroup.htm">BRAVO GROUP</a>
-            <a class="active" href="index.htm">PROBLEM STATEMENT</a>
-            <a href="ourjourney.htm">WORKFLOW</a>
-            <a href="https://fleming.maps.arcgis.com/apps/webappviewer/index.html?id=0ff8cb5b19914303bf2be719325c5166" target="_blank">PROJECT SOLUTION</a>
-             
-        </div>
+            	<a class="active" href="index.htm">PROBLEM STATEMENT</a>
+           	 <a href="ourjourney.htm">WORKFLOW</a>
+            	<a href="https://fleming.maps.arcgis.com/apps/webappviewer/index.html?id=0ff8cb5b19914303bf2be719325c5166" target="_blank">PROJECT SOLUTION</a>
+	    </div>
+	
         <div class="menbar">
             <div class="clickable-icon" onclick="toggleMenu()">
                        
             </div>
         </div>
+	
         <div class="content">
 		    <h1>THE PROBLEM STATEMENT</h1>
 		    <hr>
             	        
 	            <h2>Problem Challenges</h2>
+		
 		        <h3>PHASE 1: REVISED PROBLEM STATEMENT AND DATASET</h3> 
 		        <p class="problem"><em>Project:</em> Canadian Mortgage and Housing Corporation (CMHC) Web Application  </p>
-                <p class="problem"><em>Ideal: </em>An interactive web app that will show housing prices over time in a chosen area.</p>
 		
-                <p class="problem"><em>Reality :</em> CMHC mostly uses paper maps and is looking to transfer to online maps in order to display more data that can still be easily understood. Paper maps are limited to its size, limiting small-scale maps in what information they can display. </p>
-                
-                <p class="problem"><em>Consequences:</em> Without this web app CHMC will continue to have a difficult time displaying and sharing their data. This will hinder their abilities to use the data as a source in advocating for policy reform and presenting their research. </p>
-                
-                <p class="problem"><em>Proposal: </em>Be able to communicate how housing prices have changed over a period of time in a given area. </p>  
+                	<p class="problem"><em>Ideal: </em>An interactive web app that will show housing prices over time in a chosen area.</p>
 		
-                <p class="problem"><em>Dataset: </em> For this web app, we searched for open source data in a .csv format that also included a <i>Time</i> field, as well as a date. The data file includes latitude and longitude. 
+                	<p class="problem"><em>Reality :</em> CMHC mostly uses paper maps and is looking to transfer to online maps in order to display more data that can still be easily understood. Paper maps are limited to its size, limiting small-scale maps in what information they can display. </p>
+                
+                	<p class="problem"><em>Consequences:</em> Without this web app CHMC will continue to have a difficult time displaying and sharing their data. This will hinder their abilities to use the data as a source in advocating for policy reform and presenting their research. </p>
+                
+                	<p class="problem"><em>Proposal: </em>Be able to communicate how housing prices have changed over a period of time in a given area. </p>  
+		
+                	<p class="problem"><em>Dataset: </em> For this web app, we searched for open source data in a .csv format that also included a <i>Time</i> field, as well as a date. The data file includes latitude and longitude. 
 			
 			A dataset of number of housing starts in Canada, the provinces and all major metropolitan markets provided by <a href="https://www.cmhc-schl.gc.ca/en/data-and-research/data-tables/total-housing-starts-canada-provinces-metropolitan-areas" target="_blank">CMHC</a>  was used. It was then modified to show a small portion of it by displaying the number of housing starts from 2012 to 2016 for five metropolitan cities. </p>   
                 
-                <h3>PHASE 2: EXPLORING ARCGIS PRODUCTS</h3>
-		<p class="problem"><a href="https://www.esri.com/en-us/arcgis/products/arcgis-online/overview" target="_blank"><em>ArcGIS Online</em></a>  a cloud-based mapping platform was examined in order to host the data layer. To enable the time, an ESRI product 
+		<h3>PHASE 2: EXPLORING ARCGIS PRODUCTS</h3>
+			<p class="problem"><a href="https://www.esri.com/en-us/arcgis/products/arcgis-online/overview" target="_blank"><em>ArcGIS Online</em></a>  a cloud-based mapping platform was examined in order to host the data layer. To enable the time, an ESRI product 
 			<a href="https://www.esri.com/arcgis-blog/products/mapping/mapping/using-the-time-aware-configurable-app-template/" target="_blank"><em>Time Aware</em></a>, 
 			 a Time-enabled confgurable app was utlized to create the primary web app. To enable the time feature, the csv data file was hosted as a layer and then referenced that layer into the map to enable the time feature. </p>
-		<img class= "problemimage" src="images/datalayer.jpg" alt="Data Layer">
+			<img class= "problemimage" src="images/datalayer.jpg" alt="Data Layer">
 		
 		<h3>PHASE 3:THE WORKFLOW OF SOLVING THE PROBLEM STATEMENT PRESENTED AS OUR JOURNEY  </h3> 
 		<p class="problem">The workflow can be found in "WORKFLOW" at the top of the navigation bar, or you can simply click <a href="https://malmccrossan.github.io/geom99/ourjourney.htm">here</a>.</p>
 		
 		<h3>PHASE 4:  <a href=" https://fleming.maps.arcgis.com/apps/webappviewer/index.html?id=0ff8cb5b19914303bf2be719325c5166"  target="_blank">PROJECT SOLUTION</a> </h3> 
-		<p class="problem">In order to view the map, you must be signed into the Fleming organization to gain access.</p>
+		<p class="problem">Initially, in order to view the map, you must be signed into the Fleming organization to gain access. It has since been updated to be Public, so that anyone can access it.</p>
                
        </div>
 	    <div id="top">
