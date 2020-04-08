@@ -57,6 +57,12 @@ p.problem {
 	line-height: 1.6;
     margin: 0px;
 }
+p.note{
+	 font-size: 16px;
+    text-align: left;
+    padding: 20px 0px 15px 25px;
+	
+}
 
 hr {								
     background-color: #022b05;
